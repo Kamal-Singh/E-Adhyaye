@@ -58,10 +58,10 @@ app.get('/sub/:subject/:game/:level',function(req,res){
 
 })
 
-app.get('\*',function(req,res){
+app.get('*',function(req,res){
     res.render(__dirname+'/gamework1/index.html');
 })
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log("Server is running on http://localhost:3000/");
 });
