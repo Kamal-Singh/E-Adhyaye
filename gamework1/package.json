@@ -11,6 +11,9 @@
         "theme",
         "template"
     ],
+    "scripts": {
+        "start": "index.js"
+    },
     "homepage": "https://startbootstrap.com/template-overviews/landing-page",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page/issues",
