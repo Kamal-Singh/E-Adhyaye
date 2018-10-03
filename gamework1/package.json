@@ -12,7 +12,7 @@
         "template"
     ],
     "scripts": {
-        "start": "index.js"
+        "start": "node index.js"
     },
     "homepage": "https://startbootstrap.com/template-overviews/landing-page",
     "bugs": {
