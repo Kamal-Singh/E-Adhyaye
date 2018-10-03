@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>E-ADHYAYE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <link rel="stylesheet" href="/css/level.css">
+
+  <style>
+  *{
+      font-family: "QuickSand";
+      overflow: hidden;
+  }
+  .ball {
+	position: absolute;
+	/* border-radius: 100%; */
+	opacity: 0.4;
+  }
+  </style>
+  <script>
+function prepare(level) {
+	$("svg").hide();
+	countdown();
+	intensity = level;
+	switch (level) {
+        case "easy":
+			setTimeout(function() {
+            window.location.href=`/sub/<%=obj.subject%>/<%=obj.game%>/l1`;
+					}, 3000);
+					break;
+					case "medium":
+					setTimeout(function() {
+						window.location.href=`/sub/<%=obj.subject%>/<%=obj.game%>/l2`;
+						start();
+					}, 3000);
+					break;
+					case "hard":
+					setTimeout(function() {
+						window.location.href=`/sub/<%=obj.subject%>/<%=obj.game%>/l3`;
+						start();
+					}, 3000);
+			break;
+	}
+}
+function highlight(count) {
+	unhighlight();
+	$(".levelicon").each(function(index) {
+		var itemCount = index + 1;
+		var backgroundColour = getBackgroundColour(count);
+		if (itemCount <= count)
+			$(this).css("background-color", backgroundColour);
+	});
+}
+
+function unhighlight() {
+	$(".levelicon").each(function() {
+		$(this).css("background-color", "#555555");
+	});
+}
+
+function getBackgroundColour(count) {
+	switch (count) {
+		case 1:
+			return "#59DB28";
+		case 2:
+			return "#F6B921";
+		case 3:
+			return "#CA0424";
+	}
+}
+
+function countdown() {
+	var timer = 3;
+	$(".level").hide();
+	$(".countdown").show();
+	$(".countdown").text(timer);
+
+	setInterval(function() {
+		if (timer > 1) {
+			timer = timer - 1;
+			$(".countdown").text(timer);
+		}
+	}, 1000);
+}
+
+function start() {
+	$("#selector").hide();
+	var level = "#" + intensity;
+	$(level).removeClass("hidden");
+	$(level).addClass("selected");
+	game(true);
+}
+    </script>
+</head>
+
+<body>
+
+  <div id="selector">
+	<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 128 128" id="Layer_1" version="1.1" viewBox="0 0 128 128" xml:space="preserve"> -->
+		<g>
+			<g>
+				<path d="M64,0C28.656,0,0,28.656,0,64s28.656,64,64,64s64-28.656,64-64S99.344,0,64,0z M64,120    C33.125,120,8,94.875,8,64S33.125,8,64,8s56,25.125,56,56S94.875,120,64,120z"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path d="M64,48c-4.414,0-8,3.586-8,8v40c0,4.414,3.586,8,8,8s8-3.586,8-8V56C72,51.586,68.414,48,64,48z M64,40c4.414,0,8-3.586,8-8s-3.586-8-8-8s-8,3.586-8,8S59.586,40,64,40z"/></g>
+		</g>
+	</svg>
+    <h2 class="heading1" style="text-align: center">E-ADHYAYE</h2>
+	<div class="instructions">Choose Difficulty Level</div>
+
+	<div class="level">
+		<span class="levelicon" style="background-color: #555555;" onclick="prepare('easy')" onmouseover="highlight(1)" onmouseout="unhighlight()"></span>
+		<span class="levelicon" style="background-color: #555555;" onclick="prepare('medium')" onmouseover="highlight(2)" onmouseout="unhighlight()"></span>
+		<span class="levelicon" style="background-color: #555555;" onclick="prepare('hard')" onmouseover="highlight(3)" onmouseout="unhighlight()"></span>
+	</div>
+
+	<div class="countdown"></div>
+</div>
+<script>
+	// Some random colors
+	const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+	
+	const numBalls = 100;
+	const balls = [];
+	
+	for (let i = 0; i < numBalls; i++) {
+	  let ball = document.createElement("div");
+	  ball.classList.add("ball");
+	  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+	  ball.style.left = `${Math.floor(Math.random() * 90)}vw`;
+	  ball.style.top = `${Math.floor(Math.random() * 75)}vh`;
+	  ball.style.transform = `scale(${Math.random()})`;
+	  ball.style.width = `${Math.random()}em`;
+	  ball.style.height = ball.style.width;
+	  balls.push(ball);
+	  document.body.append(ball);
+	}
+	
+	// Keyframes
+	balls.forEach((el, i, ra) => {
+	  let to = {
+		x: Math.random() * (i % 2 === 0 ? -11 : 11),
+		y: Math.random() * 12
+	  };
+	
+	  let anim = el.animate(
+		[
+		  { transform: "translate(0, 0)" },
+		  { transform: `translate(${to.x}rem, ${to.y}rem)` }
+		],
+		{
+		  duration: (Math.random() + 1) * 2000, // random duration
+		  direction: "alternate",
+		  fill: "both",
+		  iterations: Infinity,
+		  easing: "ease-in-out"
+		}
+	  );
+	});
+	
+	</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+  
+
+    <!-- <script  src="js/level.js"></script> -->
+
+
+
+
+</body>
+
+</html>
