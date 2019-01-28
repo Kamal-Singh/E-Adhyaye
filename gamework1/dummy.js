@@ -13,7 +13,14 @@ let games = {
 		"speechy":["Hurray!, It's a correct Answer","Correct Answer Herbivorous animals eat plants. Example is deer","Hurray!, Correct Answer There are 8 planets in our solar system.","Hurray!, Correct Answer 2014 is not a leap year.","Yes Correct answer Ganga is a river flowing in India from the himalayas."],
 		"speechn":["Incorrect Answer Trees helps us in many ways, so think again","Incorrect Answer, think and choose correct answer","Noo It's wrong answer think again","Nope Incorrect Answer Think Hard Remember leap years are divisible by 4","Nope Incorrect Answer Think Again"]
 		}
-}
+},
+	"game2":{
+		"level1":{
+			"question":["Choose the fruit orange out of the following?","Choose the watermelon out of following?","Choose the Strawberry out of the following?"],
+			"answer":["orange","watermelon","Strawberry"],
+			"checklist":["orange","watermelon","Strawberry","anaspathi"],
+		}
+	},
 },
 
 'math': {
@@ -30,8 +37,14 @@ let games = {
 		"speechy":["Hurray!, It's a correct Answer","Correct Answer, Great Going","Hurray!, Correct Answer!! You are a champ","Hurray!, Correct Answer are you a mathematics champ?","Yes Correct answer keep it up"],
 		"speechn":["Incorrect its simple, so think again","Incorrect Answer, think and choose correct answer","No It's wrong answer think again","No Incorrect Answer, Think Hard! Its Simple","Nope, Incorrect Answer, Think Again"]
 		}
+	},
+	"game2":{
+		"level1":{
+			"question":["Choose the fruit orange out of the following?","Choose the watermelon out of following?","Choose the Strawberry out of the following?"],
+			"answer":["orange","watermelon","Strawberry"],
+			"checklist":["orange","watermelon","Strawberry","anaspathi"],
+		},
+	},
 }
-}
-
 }
 module.exports = games;
