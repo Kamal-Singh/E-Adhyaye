@@ -1,0 +1,280 @@
+<html>
+<head>
+    <title>
+        E-ADHYAYE
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <!-- Favicon -->
+    <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" href="/assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link type="text/css" src="/assets/css/docs.min.css" rel="stylesheet">
+    <link type="text/css" href="/assets/css/landing-page.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,800" rel="stylesheet">
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@argonjs/argon@1.4.0/dist/argon.min.js"></script>
+    <script src="/assets//vendor/nouislider/js/nouislider.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        body{
+            /* background:rgba(94, 114, 228, 0.6); */
+            background:	#e9eaeb;
+            font-family: "Poppins";
+            font-weight: 400;
+        }
+        .firstElementbox{
+            text-align: center;
+        }
+        .body{
+            clip-path: polygon(0 3%,100% 0%,100% 100%,0 97%);
+        }
+        .responsive {
+        width: 80%;
+        height: auto;
+        border-radius: 1%;
+}
+footer{
+    background:#2f2f2f;
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+.showcase{
+    color:#2f2f2f;
+}
+.pickuplines{
+         text-align: center;
+         color:#2f2f2f;   
+        }
+@media screen and (min-width: 600px) {
+  .tdesignup{
+      margin-top:-105px !important;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size:1.4rem;">E-ADHYAYE</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-primary"
+                aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar-primary">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="index.html">
+                                <img src="assets/img/brand/blue.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
+                                data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="font-size:1.2rem;">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size:1.2rem;">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbar-primary_dropdown_1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="font-size:1.2rem;">Games</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-primary_dropdown_1">
+                            <a class="dropdown-item" href="#">True or False</a>
+                            <a class="dropdown-item" href="#">Match the Picture</a>
+                            <a class="dropdown-item" href="#">Random</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section class="section section-lg pt-lg-0 sec1" style="margin:50px;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="row row-grid">
+                <div class="col-lg-6 firstElementbox">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body py-5">
+                      <!-- <div class="icon icon-shape icon-shape-primary rounded-circle mb-4"> -->
+                        <!-- <i class="ni ni-planet"></i> -->
+                      <!-- </div> -->
+                      <h4 class="text-primary text-uppercase" style="font-weight: 700;font-family: Poppins;">Founder</h4>
+                      <div class="imageContainer">
+                          <img src="img/sir.jpg" height="auto" width="auto" class="responsive">
+                         </div>
+                      <p class="description mt-3"><b style="font-weight:700;font-size:24px;">Dr. Aditya Khamparia</b></p>
+                      <p class="description mt-3">Associate Professor (CSE) at Lovely Professional University</p>
+                      <!-- <div>
+                        <span class="badge badge-pill badge-primary">E-Adhaya</span>
+                        <span class="badge badge-pill badge-primary">Games</span>
+                        <span class="badge badge-pill badge-primary">for</span>
+                        <span class="badge badge-pill badge-primary">children</span>
+                      </div> -->
+                      <a href="https://www.linkedin.com/in/dr-aditya-khamparia-59001a108/" class="btn btn-primary mt-4">Connect Linkedin</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 firstElementbox">
+                    <div class="card card-lift--hover shadow border-0">
+                      <div class="card-body py-5">
+                        <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                          <i class="ni ni-badge"></i>
+                        </div>
+                        <h4 class="text-primary text-uppercase" style="font-family:Poppins;font-weight:700;">About Me</h4>
+                        <!-- <div class="imageContainer">
+                            <img src="img/sir.jpg" height="auto" width="auto" class="responsive">
+                           </div> -->
+                        <p class="description mt-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"</p>
+                        <!-- <div>
+                          <span class="badge badge-pill badge-primary">E-Adhaya</span>
+                          <span class="badge badge-pill badge-primary">Games</span>
+                          <span class="badge badge-pill badge-primary">for</span>
+                          <span class="badge badge-pill badge-primary">children</span>
+                        </div> -->
+                        <a href="#" class="btn btn-primary mt-4">Know More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 firstElementbox" style="margin-top:30px;">
+                    <div class="card card-lift--hover shadow border-0">
+                      <div class="card-body py-5">
+                        <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                          <i class="ni ni-app"></i>
+                        </div>
+                        <h4 class="text-primary text-uppercase" style="font-family:Poppins;font-weight:700;">About E-Adhaye</h4>
+                        <div class="imageContainer">
+                            <img src="img/GameDesign2.jpg" height="auto" width="auto" class="responsive">
+                           </div>
+                        <p class="description mt-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <!-- <div>
+                          <span class="badge badge-pill badge-primary">E-Adhaya</span>
+                          <span class="badge badge-pill badge-primary">Games</span>
+                          <span class="badge badge-pill badge-primary">for</span>
+                          <span class="badge badge-pill badge-primary">children</span>
+                        </div> -->
+                        <a href="#" class="btn btn-primary mt-4">Know More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 firstElementbox tdesignup">
+                    <div class="card card-lift--hover shadow border-0">
+                      <div class="card-body py-5">
+                        <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                          <i class="ni ni-satisfied"></i>
+                        </div>
+                        <h4 class="text-primary text-uppercase" style="font-family:Poppins;font-weight:700;">E-Adhyaye Success Stories</h4>
+                        <div class="imageContainer">
+                            <img src="img/GameDesign1.jpg" height="auto" width="auto" class="responsive">
+                           </div>
+                        <p class="description mt-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <!-- <div>
+                          <span class="badge badge-pill badge-primary">E-Adhaya</span>
+                          <span class="badge badge-pill badge-primary">Games</span>
+                          <span class="badge badge-pill badge-primary">for</span>
+                          <span class="badge badge-pill badge-primary">children</span>
+                        </div> -->
+                        <a href="#" class="btn btn-primary mt-4">Know More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 firstElementbox" style="margin-top:30px;">
+                    <div class="card card-lift--hover shadow border-0">
+                      <div class="card-body py-5">
+                        <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                          <i class="ni ni-world"></i>
+                        </div>
+                        <h4 class="text-primary text-uppercase" style="font-family:Poppins;font-weight:700;">Recognized by</h4>
+                        <p class="description mt-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <div class="imageContainer">
+                            <img src="img/lpuli.png" height="auto" width="auto" class="responsive">
+                           </div>
+                           <div class="imageContainer">
+                            <img src="img/ICSSR-Fellowship-2018.png" height="auto" width="auto" class="responsive">
+                           </div>
+                        <!-- <div>
+                          <span class="badge badge-pill badge-primary">E-Adhaya</span>
+                          <span class="badge badge-pill badge-primary">Games</span>
+                          <span class="badge badge-pill badge-primary">for</span>
+                          <span class="badge badge-pill badge-primary">children</span>
+                        </div> -->
+                        <a href="#" class="btn btn-primary mt-4">Know More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 firstElementbox tdesignup">
+                        <div class="card card-lift--hover shadow border-0">
+                          <div class="card-body py-5">
+                            <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                              <i class="ni ni-planet"></i>
+                            </div>
+                            <h4 class="text-primary text-uppercase" style="font-family:Poppins;font-weight:700;">Our Vision</h4>
+                            <p class="description mt-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            <!-- <div class="imageContainer">
+                                <img src="img/lpuli.png" height="auto" width="auto" class="responsive">
+                               </div>
+                               <div class="imageContainer">
+                                <img src="img/ICSSR-Fellowship-2018.png" height="auto" width="auto" class="responsive">
+                               </div> -->
+                            <!-- <div>
+                              <span class="badge badge-pill badge-primary">E-Adhaya</span>
+                              <span class="badge badge-pill badge-primary">Games</span>
+                              <span class="badge badge-pill badge-primary">for</span>
+                              <span class="badge badge-pill badge-primary">children</span>
+                            </div> -->
+                            <!-- <a href="#" class="btn btn-primary mt-4">Know More</a> -->
+                          </div>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<footer class="footer has-cards" style="margin-top:-600px;">
+        <div class="container" style="margin-top:180px;">
+          <div class="row row-grid align-items-center">
+            <div class="col-lg-6">
+              <h3 class="text-primary font-weight-light mb-2" style="font-size:3.8rem;">E-Adhyaye</h3>
+              <h4 class="mb-0 font-weight-light" style="font-size:1.9em;">We hope you all would like it.</h4>
+            </div>
+          </div>
+          <small style="font-size: 1.4rem;"> We are updating it. Currently it is beta version.</small>
+          <hr style="color:black;height: 3px;">
+          <div class="row align-items-left">
+            <div class="col-md-6">
+              <div class="copyright" style="font-size: 1.3rem;">
+                © 2018
+                <span style="font-size: 1.3rem;">ToughX<span>.
+              </span></span></div>
+            </div>
+          </div>
+        </div>
+      </footer>
