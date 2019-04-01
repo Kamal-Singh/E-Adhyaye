@@ -1,0 +1,129 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.0 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */body{font-family:"QuickSand",Lato,'Helvetica Neue',Helvetica,Arial,sans-serif}h1,h2,h3,h4,h5,h6{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700}header.masthead{position:relative;background-color:#343a40;background:url(../img/bg-masthead.jpg) no-repeat center center;background-attachment:fixed;background-size:cover;padding-top:8rem;padding-bottom:8rem}header.masthead .overlay{position:absolute;background-color:#212529;height:100%;width:100%;top:0;left:0;opacity:.3}header.masthead h1{font-size:2rem}@media (min-width:768px){header.masthead{padding-top:12rem;padding-bottom:12rem}header.masthead h1{font-size:3rem}}.showcase .showcase-text{padding:3rem}.showcase .showcase-img{min-height:30rem;background-size:cover}@media (min-width:768px){.showcase .showcase-text{padding:7rem}}.features-icons{padding-top:7rem;padding-bottom:7rem}.features-icons .features-icons-item{max-width:20rem}.features-icons .features-icons-item .features-icons-icon{height:7rem}.features-icons .features-icons-item .features-icons-icon i{font-size:4.5rem}.features-icons .features-icons-item:hover .features-icons-icon i{font-size:5rem}.testimonials{padding-top:7rem;padding-bottom:7rem}.testimonials .testimonial-item{max-width:18rem}.testimonials .testimonial-item img{max-width:12rem;-webkit-box-shadow:0 5px 5px 0 #adb5bd;box-shadow:0 5px 5px 0 #adb5bd}.call-to-action{position:relative;background-color:#343a40;background:url(../img/bg-masthead.jpg) no-repeat center center;background-attachment:fixed;background-size:cover;padding-top:7rem;padding-bottom:7rem}.call-to-action .overlay{position:absolute;background-color:#212529;height:100%;width:100%;top:0;left:0;opacity:.3}footer.footer{padding-top:4rem;padding-bottom:4rem}
+ a.animated-button.thar-one {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-one:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: none;
+}
+a.animated-button.thar-one:hover:before {
+	bottom: 0%;
+	top: auto;
+	height: 100%;
+}
+a.animated-button.thar-one:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-two {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-two:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: ntwo;
+}
+a.animated-button.thar-two:hover:before {
+	top: 0%;
+	bottom: auto;
+	height: 100%;
+}
+a.animated-button.thar-two:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-three {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+a.animated-button.thar-three:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+a.animated-button.thar-four {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+a.animated-button.thar-four:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nfour;
+}
+a.animated-button.thar-four:hover:before {
+	right: 0%;
+	left: auto;
+	width: 100%;
+}
+a.animated-button.thar-four:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
